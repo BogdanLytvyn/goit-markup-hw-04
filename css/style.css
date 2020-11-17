@@ -15,7 +15,6 @@ html {
   --background-primary: #ffffff;
   --background-team: #f5f4fa;
   --background-dark: #2f303a;
-  --
 }
 
 /* ===========Общие стили=========== */
@@ -25,8 +24,8 @@ body {
   color: var(--text-color-primary);
 
   font-style: normal;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -146,8 +145,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../img/hero/img-hero.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero/img-hero.jpg');
 
   text-align: center;
 
@@ -158,7 +156,6 @@ main .hero {
   padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .hero h1 {
@@ -241,7 +238,7 @@ main .hero {
   display: block;
   content: '';
   height: 120px;
-    border-radius: 4px;
+  border-radius: 4px;
   background-color: var(--background-team);
   background-repeat: no-repeat;
   background-position: center;
@@ -293,13 +290,13 @@ main .hero {
 /* <==========TEAM===========> */
 .team {
   display: flex;
-    width: 1600px;
+  min-width: 1600px;
   padding: 94px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
-  background-color:var(--background-team);
-  }
+  background-color: var(--background-team);
+}
 
 .team h4 {
   display: block;
@@ -341,14 +338,13 @@ main .hero {
 .team-list > li {
   padding-bottom: 30px;
 
-  background-color:var(--background-primary);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-primary);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .page-team {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .team-list {
@@ -362,21 +358,21 @@ main .hero {
 /* <============CLIENTS=============> */
 
 .clients-title {
-padding-top: 94px;
-padding-bottom: 50px;
-
- font-weight: bold;
-font-size: 36px;
-line-height: 1.67;
-text-align: center;
-color: var(--text-color-primary);
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--text-color-primary);
 }
 
 /* ----FOOTER----- */
 
 /* <=========Логотип footer===========> */
 
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-dark);
@@ -414,7 +410,7 @@ footer {
 /* ==========Портфолио samples========== */
 .portfolio {
   border-bottom: 1px solid #ececec;
-  }
+}
 
 .work {
   padding-top: 94px;
