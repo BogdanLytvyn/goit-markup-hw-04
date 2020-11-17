@@ -15,17 +15,18 @@ html {
   --background-primary: #ffffff;
   --background-team: #f5f4fa;
   --background-dark: #2f303a;
+  --
 }
 
-/* Общие стили */
+/* ===========Общие стили=========== */
 
 body {
   background-color: var(--background-primary);
   color: var(--text-color-primary);
 
   font-style: normal;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -43,11 +44,10 @@ button {
   font-family: inherit;
 }
 
-/* Стили index.html */
+/* -----ОФОРМЛЕНИЕ HEADER------ */
 
-/* ОФОРМЛЕНИЕ HEADER */
+/* ==========Логотип========== */
 
-/* Логотип */
 .logo a {
   color: var(--color-accent);
 
@@ -61,7 +61,7 @@ button {
   color: #000000;
 }
 
-/* Навигация*/
+/* ==========Навигация============*/
 
 .nav-link {
   color: var(--text-color-primary);
@@ -89,7 +89,8 @@ button {
   margin-right: 50px;
 }
 
-/* Контакти */
+/* ==========Контакти=========== */
+
 .contact-link {
   color: var(--text-color-second);
 
@@ -112,7 +113,7 @@ button {
   margin-right: 50px;
 }
 
-/* Оформление FLEX HEADER */
+/* ========Оформление FLEX HEADER========= */
 
 .nav-site {
   display: flex;
@@ -134,10 +135,20 @@ button {
   margin-left: auto;
 }
 
-/* ОФОРМЛЕНИЕ MAIN */
+/* -----MAIN----- */
 
-/* hero */
+/* <============HERO============> */
 .hero {
+  display: block;
+  width: 1600px;
+  height: 600px;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../img/hero/img-hero.jpg');
+
   text-align: center;
 
   color: #ffffff;
@@ -147,12 +158,7 @@ main .hero {
   padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
-  /* margin-bottom: 94px; */
-  /* border: 1px solid transparent; */
 
-  background-color: var(--background-dark);
-
-  /* outline: 2px solid tomato; */
 }
 
 .hero h1 {
@@ -172,11 +178,15 @@ main .hero {
   margin-right: auto;
   padding: 10px 32px;
   border-radius: 4px;
+  border: 0px;
   min-width: 200px;
   margin-bottom: 0;
 
   color: #ffffff;
   background-color: var(--color-accent);
+
+  background: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: bold;
   font-size: 16px;
@@ -188,13 +198,14 @@ main .hero {
   letter-spacing: 0.06em;
 }
 
-/* feature Подходы роботы*/
+/* <=========FEATURE=========>*/
 .feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .feature-list h2 {
+  padding-top: 30px;
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -225,13 +236,38 @@ main .hero {
 .feature-list > li {
   width: 270px;
 }
-/* Оформление FLEX FEATURE */
+
+.feature-list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+    border-radius: 4px;
+  background-color: var(--background-team);
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 1px solid red;
+}
+.item-antenna::before {
+  background-image: url('../img/svg/antenna.svg');
+}
+
+.item-clock::before {
+  background-image: url('../img/svg/clock.svg');
+}
+
+.item-diagrama::before {
+  background-image: url('../img/svg/diagram.svg');
+}
+
+.item-astronaut::before {
+  background-image: url('../img/svg/astronaut.svg');
+}
 
 .feature-list {
   display: flex;
 }
 
-/* sample Чем мы занимаемся */
+/* <============SEAMPLE==========> */
 .sample {
   padding-bottom: 94px;
 }
@@ -254,11 +290,16 @@ main .hero {
   margin-right: 30px;
 }
 
-/* team Наша команда */
+/* <==========TEAM===========> */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  display: flex;
+    width: 1600px;
+  padding: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-color:var(--background-team);
+  }
 
 .team h4 {
   display: block;
@@ -300,12 +341,14 @@ main .hero {
 .team-list > li {
   padding-bottom: 30px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color:var(--background-primary);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .page-team {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .team-list {
@@ -316,9 +359,23 @@ main .hero {
   margin-right: 30px;
 }
 
-/* ОФОРМЛЕНИЕ FOOTER */
+/* <============CLIENTS=============> */
 
-/* Логотип footer */
+.clients-title {
+padding-top: 94px;
+padding-bottom: 50px;
+
+ font-weight: bold;
+font-size: 36px;
+line-height: 1.67;
+text-align: center;
+color: var(--text-color-primary);
+}
+
+/* ----FOOTER----- */
+
+/* <=========Логотип footer===========> */
+
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -329,7 +386,8 @@ footer {
   color: #ffffff;
 }
 
-/* Контакты footer*/
+/* <==========Контакты footer==========>*/
+
 .footer-list {
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.6);
@@ -351,13 +409,13 @@ footer {
   margin-bottom: 9px;
 }
 
-/* Стили portfolio.html */
+/* <<<<<portfolio.html>>>>>> */
 
-/* Портфолио samples */
+/* ==========Портфолио samples========== */
 .portfolio {
   border-bottom: 1px solid #ececec;
-  /* margin-bottom: 94px; */
-}
+  }
+
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -390,7 +448,8 @@ footer {
   color: #ffffff;
 }
 
-/* Портфолио card */
+/* ==========Портфолио card============ */
+
 .work-card {
   display: flex;
   flex-wrap: wrap;
@@ -440,7 +499,7 @@ footer {
   padding: 20px 24px;
 }
 
-/* Оформление padding, margin */
+/* ==========conteiner==========*/
 .conteiner {
   width: 1200px;
   margin-right: auto;
