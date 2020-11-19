@@ -116,13 +116,16 @@ img {
 
 .contact-list {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-list-item {
+.contact-link {
   display: flex;
+  align-items: center;
 }
 
 .contact-link-icon {
@@ -130,7 +133,13 @@ img {
   height: 20px;
 }
 
-.contact-llist-item:hover .contact-link-icon {
+.contact-llist-item:hover .contact-link-icon,
+.contact-llist-item:focus .contact-link-icon {
+  fill: var(--color-accent);
+}
+
+.contact-link:hover .contact-link-icon,
+.contact-link:focus .contact-link-icon {
   fill: var(--color-accent);
 }
 
@@ -154,6 +163,15 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
+}
+
+.contact-list-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-link-icon {
+  margin-right: 10px;
 }
 
 /* -----MAIN----- */
@@ -402,10 +420,6 @@ img {
   height: 44px;
   background-color: var(--icon-white);
   border-radius: 50px;
-}
-
-.contact-link-icon {
-  margin-right: 30px;
 }
 
 .social-list-icon,
