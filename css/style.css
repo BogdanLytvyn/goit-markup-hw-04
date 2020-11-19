@@ -182,7 +182,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero/img-hero.jpg');
-
+  background-size: cover;
   text-align: center;
 }
 
@@ -662,7 +662,3 @@ img {
 }
 
 /* <==============SVG===========> */
-.icon {
-  width: 16px;
-  height: 12px;
-}
