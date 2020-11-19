@@ -15,6 +15,8 @@ html {
   --background-primary: #ffffff;
   --background-team: #f5f4fa;
   --background-dark: #2f303a;
+  --icon-primary: #afb1b8;
+  --icon-white: #ffffff;
 }
 
 /* ===========Общие стили=========== */
@@ -323,7 +325,7 @@ button {
 
 .team-list-description {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--text-color-second);
 
   font-weight: normal;
@@ -352,10 +354,51 @@ button {
   margin-right: 30px;
 }
 
-/* <============CLIENTS=============> */
+/* -----icon----- */
 
-.clients-title {
+.social {
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+  padding-left: 32px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-primary);
+  border-radius: 50px;
+  color: red;
+}
+
+.social-list-link:hover {
+  background-color: var(--color-accent);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  fill: var(--color-accent);
+}
+
+.social-list-icon:hover {
+  border-color: var(--color-accent);
+  fill: var(--icon-white);
+}
+
+/* <============CLIENTS=============> */
+.clients {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
   padding-bottom: 50px;
   margin: 0;
   font-weight: bold;
@@ -363,6 +406,21 @@ button {
   line-height: 1.67;
   text-align: center;
   color: var(--text-color-primary);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
 }
 
 /* ----FOOTER----- */
@@ -402,6 +460,20 @@ button {
   margin-bottom: 9px;
 }
 
+.footer-social-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  margin-left: 70px;
+}
+
 /* <<<<<portfolio.html>>>>>> */
 
 /* ==========Портфолио samples========== */
@@ -439,6 +511,7 @@ button {
 .work-nav .button:focus {
   background-color: var(--color-accent);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ==========Портфолио card============ */
@@ -446,6 +519,9 @@ button {
 .work-card {
   display: flex;
   flex-wrap: wrap;
+}
+.work-card-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-card-item:nth-child(3n) {
@@ -495,4 +571,10 @@ button {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+/* <==============SVG===========> */
+.icon {
+  width: 16px;
+  height: 12px;
 }
