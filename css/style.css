@@ -45,6 +45,12 @@ button {
   font-family: inherit;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 /* -----ОФОРМЛЕНИЕ HEADER------ */
 
 /* ==========Логотип========== */
@@ -92,8 +98,10 @@ button {
 
 /* ==========Контакти=========== */
 
-.contact-link {
+.contact-link,
+.contact-link svg {
   color: var(--text-color-second);
+  fill: var(--text-color-second);
 
   font-weight: 500;
   font-size: 14px;
@@ -112,6 +120,18 @@ button {
 
 .contact-list-item:not(:last-child) {
   margin-right: 50px;
+}
+.contact-list-item {
+  display: flex;
+}
+
+.contact-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-llist-item:hover .contact-link-icon {
+  fill: var(--color-accent);
 }
 
 /* ========Оформление FLEX HEADER========= */
@@ -177,6 +197,7 @@ button {
   border: 0px;
   min-width: 200px;
   margin-bottom: 0;
+  cursor: pointer;
 
   color: #ffffff;
   background-color: var(--color-accent);
@@ -241,7 +262,7 @@ button {
   background-color: var(--background-team);
   background-repeat: no-repeat;
   background-position: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .item-antenna::before {
   background-image: url('../img/svg/antenna.svg');
@@ -367,29 +388,30 @@ button {
   justify-content: space-around;
 }
 
-.social-list-link {
+.social-list-link,
+.footer-social-link {
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--background-primary);
+  background-color: var(--icon-white);
   border-radius: 50px;
-  color: red;
+}
+
+.social-list-icon,
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  fill: var(--icon-primary);
 }
 
 .social-list-link:hover {
   background-color: var(--color-accent);
 }
 
-.social-list-icon {
-  width: 20px;
-  height: 20px;
-  justify-content: center;
-  fill: var(--color-accent);
-}
-
-.social-list-icon:hover {
-  border-color: var(--color-accent);
+.social-list-link:hover .social-list-icon {
   fill: var(--icon-white);
 }
 
@@ -415,7 +437,8 @@ button {
 
 .clients-list-link {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -423,14 +446,30 @@ button {
   border-radius: 4px;
 }
 
+.clients-list-link:hover {
+  border-color: var(--color-accent);
+}
+
+.clients-list-icon {
+  justify-content: center;
+  fill: var(--icon-primary);
+}
+
+.clients-list-link:hover .clients-list-icon {
+  fill: var(--color-accent);
+}
+
 /* ----FOOTER----- */
 
 /* <=========Логотип footer===========> */
 
 .footer {
+  background-color: var(--background-dark);
+}
+
+.footer-address {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-dark);
 }
 
 .logo-footer {
@@ -461,6 +500,9 @@ button {
 }
 
 .footer-social-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -468,10 +510,29 @@ button {
 
   color: #ffffff;
 }
-
+/* <--------icon--------> */
 .footer-social {
-  display: flex;
+  padding-top: 72px;
+  padding-bottom: 100px;
   margin-left: 70px;
+  margin-right: auto;
+}
+
+.footer-social-list {
+  display: flex;
+}
+.footer .footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icon {
+  fill: var(--icon-white);
+}
+.footer .footer-social-link:hover {
+  background-color: var(--color-accent);
+}
+
+.footer-box {
+  display: flex;
 }
 
 /* <<<<<portfolio.html>>>>>> */
