@@ -215,6 +215,11 @@ img {
   letter-spacing: 0.06em;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
 /* <=========FEATURE=========>*/
 .feature {
   padding-top: 94px;
@@ -399,6 +404,10 @@ img {
   border-radius: 50px;
 }
 
+.contact-link-icon {
+  margin-right: 30px;
+}
+
 .social-list-icon,
 .footer-social-icon {
   width: 20px;
@@ -407,11 +416,13 @@ img {
   fill: var(--icon-primary);
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--color-accent);
 }
 
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: var(--icon-white);
 }
 
@@ -446,16 +457,18 @@ img {
   border-radius: 4px;
 }
 
-.clients-list-link:hover {
-  border-color: var(--color-accent);
-}
-
 .clients-list-icon {
   justify-content: center;
   fill: var(--icon-primary);
 }
 
-.clients-list-link:hover .clients-list-icon {
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--color-accent);
+}
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
   fill: var(--color-accent);
 }
 
@@ -527,7 +540,12 @@ img {
 .footer-social-icon {
   fill: var(--icon-white);
 }
-.footer .footer-social-link:hover {
+.footer-social-list-item:not(last-child) {
+  margin-right: 10px;
+}
+
+.footer .footer-social-link:hover,
+.footer .footer-social-link:focus {
   background-color: var(--color-accent);
 }
 
@@ -570,6 +588,7 @@ img {
 
 .work-nav .button:hover,
 .work-nav .button:focus {
+  cursor: pointer;
   background-color: var(--color-accent);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
