@@ -134,11 +134,6 @@ img {
   height: 20px;
 }
 
-.contact-llist-item:hover .contact-link-icon,
-.contact-llist-item:focus .contact-link-icon {
-  fill: var(--color-accent);
-}
-
 .contact-link:hover .contact-link-icon,
 .contact-link:focus .contact-link-icon {
   fill: var(--color-accent);
