@@ -95,6 +95,22 @@ img {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+/* 
+.active::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: '';
+  width: 48px;
+  height: 4;
+  border: tomato;
+  border-radius: 2px;
+
+  background-color: var(--color-accent);
+
+  outline: 1 solid tomato;
+} */
 
 /* ==========Контакти=========== */
 
@@ -238,7 +254,6 @@ img {
 }
 
 .feature-list-title {
-  padding-top: 30px;
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -274,6 +289,7 @@ img {
   display: block;
   content: '';
   height: 120px;
+  margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--background-team);
   background-repeat: no-repeat;
@@ -465,7 +481,6 @@ img {
 }
 
 .clients-list-icon {
-  justify-content: center;
   fill: var(--icon-primary);
 }
 
